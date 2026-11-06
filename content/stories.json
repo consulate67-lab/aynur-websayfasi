@@ -1,0 +1,30 @@
+[
+  {
+    "id": "mutfakta",
+    "slug": "mutfakta",
+    "title": "Mutfakta bir öğleden sonra",
+    "eyebrow": "Hikaye",
+    "summary": "Buhar yükselen tencerenin yanında, baharat kavanozları ve taze maydanoz — Aynur’un evi gibi sade ve sıcak bir mutfak anı.",
+    "body": [
+      "Çay demlenirken ocakta yemek kaynar. Aynur, tahta kaşığı yavaşça çevirir; pencereden gelen amber ışık tezgâhı yumuşatır.",
+      "Bu kare bir gösteriş değil — komşuya bir tabak göndermeden önceki o sessiz, tanıdık ritüel."
+    ],
+    "image": "/stories/aynur-cooking-kitchen.jpg",
+    "imageAlt": "Aynur sıcak bir ev mutfağında tencere karıştırırken",
+    "date": "2026-11-06"
+  },
+  {
+    "id": "mahalle-yuruyusu",
+    "slug": "mahalle-yuruyusu",
+    "title": "Mahalle sokaklarında yürüyüş",
+    "eyebrow": "Hikaye",
+    "summary": "Taş döşeli dar sokak, saksıdaki yeşillikler, yumuşak gün ışığı — Aynur’un mahallesinde sakin bir yürüyüş.",
+    "body": [
+      "Kapı önünde günaydınlar, kaldırımda tanıdık yüzler. Aynur eşarbını düzelterek yürür; arkasında eski bina cepheleri ve hafif bir rüzgâr.",
+      "Mahalle sadece bir yer değil — her adımda yenilenen bir selamlaşma."
+    ],
+    "image": "/stories/aynur-neighborhood-walk.jpg",
+    "imageAlt": "Aynur mahalle sokaklarında yürürken",
+    "date": "2026-11-06"
+  }
+]
