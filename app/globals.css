@@ -564,6 +564,121 @@ a {
   }
 }
 
+/* Giriş şarkısı */
+.song-prompt {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 50;
+  padding: 1rem clamp(1rem, 4vw, 2rem) 1.25rem;
+  pointer-events: none;
+  animation: rise 0.7s 0.4s var(--ease) both;
+}
+
+.song-prompt-inner {
+  pointer-events: auto;
+  width: min(28rem, 100%);
+  margin-inline: auto;
+  padding: 1.1rem 1.25rem 1.2rem;
+  background: rgba(243, 247, 244, 0.96);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  box-shadow: 0 12px 36px rgba(16, 28, 24, 0.16);
+  backdrop-filter: blur(10px);
+}
+
+.song-prompt-title {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.song-prompt-text {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.song-prompt-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.song-btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.song-btn-dismiss {
+  background: transparent;
+  border: 1.5px solid var(--line);
+  color: var(--ink-soft);
+}
+
+.song-btn-dismiss:hover {
+  background: var(--mist);
+  color: var(--ink);
+}
+
+.song-bar {
+  position: fixed;
+  top: calc(var(--header-h) + 0.55rem);
+  right: clamp(0.85rem, 3vw, 1.75rem);
+  z-index: 45;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.song-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(243, 247, 244, 0.35);
+  border-radius: 0.4rem;
+  background: rgba(16, 28, 24, 0.55);
+  color: #f5f8f6;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition:
+    background 0.25s var(--ease),
+    transform 0.25s var(--ease);
+}
+
+.song-chip:hover {
+  background: rgba(16, 28, 24, 0.72);
+  transform: translateY(-1px);
+}
+
+.song-chip.is-active {
+  background: rgba(47, 106, 88, 0.88);
+  border-color: transparent;
+}
+
+.song-chip-icon {
+  font-size: 0.85rem;
+  opacity: 0.95;
+  line-height: 1;
+}
+
+@media (max-width: 560px) {
+  .song-prompt {
+    padding-bottom: 0.85rem;
+  }
+
+  .song-prompt-inner {
+    padding: 1rem 1.05rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -576,7 +691,8 @@ a {
   .cta-row,
   .reveal,
   .shot img,
-  .story-feature-img {
+  .story-feature-img,
+  .song-prompt {
     animation: none !important;
     transition: none !important;
     transform: none !important;

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Reveal } from "@/components/Reveal";
 import { StoryCard } from "@/components/StoryCard";
+import { EntranceSong } from "@/components/EntranceSong";
 import { getStories } from "@/lib/stories";
 
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
         İçeriğe geç
       </a>
       <SiteHeader />
+      <EntranceSong />
 
       <main>
         <section className="hero" id="ust" aria-label="Karşılama">
