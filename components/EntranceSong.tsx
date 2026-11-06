@@ -131,10 +131,10 @@ export function EntranceSong() {
       {showPrompt && state !== "playing" && (
         <div className="song-prompt" role="dialog" aria-label="Giriş şarkısı">
           <div className="song-prompt-inner">
-            <p className="song-prompt-title">Giriş şarkısı</p>
+            <p className="song-prompt-title">Mahallemizin Sıcaklığı</p>
             <p className="song-prompt-text">
-              Aynur’un mahallesine hoş geldin — kısa bir karşılama dinlemek
-              ister misin?
+              Aynur’un mahallesine hoş geldin — giriş şarkısını dinlemek ister
+              misin?
             </p>
             <div className="song-prompt-actions">
               <button
